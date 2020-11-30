@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SdR-EN-Cvp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Back to teal-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TealViewController" customModule="Beginner_Navigation_Controller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtI-6d-O98">
+                                <rect key="frame" x="107" y="423" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="P8v-wG-HOo"/>
+                                    <constraint firstAttribute="width" constant="200" id="aHj-JV-l9r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Go to Pink">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bRX-mO-7Gm" kind="show" id="44J-J6-VHv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vtI-6d-O98" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7VU-OJ-J1a"/>
+                            <constraint firstItem="vtI-6d-O98" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JRV-s3-jri"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Back to teal" id="qOh-QR-MGO">
+                        <barButtonItem key="backBarButtonItem" title="Back to teal" id="gKn-5K-Zt6"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="129.91071428571428"/>
+        </scene>
+        <!--Back to pink-->
+        <scene sceneID="vQ4-8D-G4b">
+            <objects>
+                <viewController id="bRX-mO-7Gm" customClass="PinkViewController" customModule="Beginner_Navigation_Controller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dcu-xX-GTr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOc-ua-6PI">
+                                <rect key="frame" x="107" y="423" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SGO-iZ-53F"/>
+                                    <constraint firstAttribute="width" constant="200" id="teE-WH-7Tv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Go to Yellow">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="push:" destination="bRX-mO-7Gm" eventType="touchUpInside" id="o9A-tJ-s9l"/>
+                                    <segue destination="Elu-6A-FWg" kind="show" id="ySv-Bh-xcC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vOc-ua-6PI" firstAttribute="centerX" secondItem="Dcu-xX-GTr" secondAttribute="centerX" id="ADj-60-h0Y"/>
+                            <constraint firstItem="vOc-ua-6PI" firstAttribute="centerY" secondItem="Dcu-xX-GTr" secondAttribute="centerY" id="x3X-yA-xnf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VTU-Yu-FOB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Back to pink" id="kTO-XO-AMa">
+                        <barButtonItem key="backBarButtonItem" title="Back to pink" id="eQn-o7-Xnc"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcz-no-Kss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1811" y="137"/>
+        </scene>
+        <!--Yellow-->
+        <scene sceneID="R3S-65-6ov">
+            <objects>
+                <viewController title="Yellow" id="1s3-CP-xjN" customClass="YellowViewController" customModule="Beginner_Navigation_Controller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aVJ-4c-isn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="r7Q-9g-Yix"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Yellow Screen" image="paintbrush.fill" catalog="system" id="2ca-gp-Bme"/>
+                    <navigationItem key="navigationItem" id="1l3-xe-73s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqD-27-bwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2566" y="140"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="75g-Mh-UyB">
+            <objects>
+                <tabBarController id="Elu-6A-FWg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Oso-tK-Ytv"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gFJ-5U-99W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1s3-CP-xjN" kind="relationship" relationship="viewControllers" id="nzd-Gl-MUg"/>
+                        <segue destination="PG3-qX-Dqr" kind="relationship" relationship="viewControllers" id="tPV-J5-v13"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12P-SV-DmT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2565" y="-585"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="odP-ah-NN6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SdR-EN-Cvp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="b8M-I6-osw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AK0-nb-El7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVX-og-XyK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+        <!--Green-->
+        <scene sceneID="ULl-xP-fVZ">
+            <objects>
+                <viewController title="Green" id="PG3-qX-Dqr" customClass="GreenViewController" customModule="Beginner_Navigation_Controller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lzh-B8-EgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="xki-Bd-FeV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Green Screen" image="paintbrush" catalog="system" id="tN1-EL-8ds"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1CK-8D-cUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3287" y="140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paintbrush" catalog="system" width="128" height="128"/>
+        <image name="paintbrush.fill" catalog="system" width="128" height="125"/>
+    </resources>
+</document>
